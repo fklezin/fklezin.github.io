@@ -1,21 +1,23 @@
 # Site settings
-title: Daktilo
+title: Florijan Klezin
 description: >
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://hitchhiker.ma" # the base hostname & protocol for your site
+url: "https://fklezin.github.io" # the base hostname & protocol for your site
 
 author:
-  fullname: Motaquillah Maddane
-  googleplus: https://www.google.com/+MotaquillahMaddane
-  github: kronik3r
-  twitter: electrik_frog
+  fullname: Florijan Klezin
+  mail: klezin.florijan95@gmail.com
+  linkedin: https://www.linkedin.com/in/florijan-klezin-72204910b/
+  github: fklezin
+  facebook: https://www.facebook.com/florijan.klezin
+  #instagram : https://www.instagram.com/fklezin/
   # disqus: your_disqus_forum_shortname
 
-# google_analytics: 'UA-XXXXXXXX-X'
+google_analytics: 'UA-141803197-1'
 
 # Syntax highlighting
 highlightstyle: ''
