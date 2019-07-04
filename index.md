@@ -16,7 +16,9 @@ Currently working at Know Center - Austria's leading research center for data-dr
 <!--<b>Welcome to my personal page!</b>--> 
 
 Interested in working together?
-Let's have a talk.
+[Let's have a talk.](mailto:klezin.florijan95@gmail.com)
+
+
 
 
 
