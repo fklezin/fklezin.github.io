@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "2. Installing Kafka"
+subtitle: "Apache Kafka Series"
+date:   2020-11-13 00:00:00
+categories: [event streaming, kafka]
+---
+
+_How Kafka is Installed_
+-------------------------------------------------------------------------
+
+Kafka requires Zookeeper to make sure the data is in sync and to establish a leader.
+Kafka runs on cluster as well as Zookeeper that assures high availability and fault tolerance.
+
+
+
+
+
+References:
+https://kafka.apache.org/documentation/#introduction
+https://kafka.apache.org/powered-by
