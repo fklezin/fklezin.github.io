@@ -1,4 +1,4 @@
-name: Build and Deploy QR App to Pages
+name: Build and Deploy Site to Pages
 
 on:
   push:
@@ -25,28 +25,40 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Use Node
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: "npm"
           cache-dependency-path: qr.upn/package-lock.json
 
-      - name: Install deps
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Install QR app deps
         working-directory: qr.upn
         run: npm ci --legacy-peer-deps || npm install --legacy-peer-deps
 
-      - name: Build
+      - name: Build QR app
         working-directory: qr.upn
         run: npm run build
 
-      - name: Add SPA 404
-        run: cp qr.upn/dist/index.html qr.upn/dist/404.html || true
+      - name: Copy QR app to Jekyll site
+        run: |
+          mkdir -p _site/qr.upn
+          cp -r qr.upn/dist/* _site/qr.upn/
+          cp qr.upn/dist/index.html _site/qr.upn/404.html || true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: qr.upn/dist
+          path: _site
 
   deploy:
     needs: build
