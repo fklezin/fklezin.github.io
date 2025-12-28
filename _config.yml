@@ -28,5 +28,5 @@ exclude: ["README.md", "README.html", "vendor", "node_modules", ".git", ".github
 highlighter: null
 markdown: kramdown
 
-plugins:
-  - jekyll-admin
+# jekyll-admin disabled to avoid eventmachine dependency
+plugins: []
