@@ -1,0 +1,33 @@
+# Jekyll build outputs
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby/Bundler
+vendor/bundle
+Gemfile.lock
+.bundle/
+
+# IDE and Editor files
+.cursor/
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker volumes
+.docker/
+
+# Python virtual environments
+venv/
+env/
+*.pyc
+__pycache__/
+
+# Benchmark output files
+_posts/scripts/benchmark_data/
+_posts/scripts/benchmark_results.csv
+_posts/scripts/benchmark_results.png

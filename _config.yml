@@ -9,24 +9,22 @@ url: "https://fklezin.github.io" # the base hostname & protocol for your site
 author:
   fullname: Florijan Klezin
   mail: klezin.florijan95@gmail.com
-  linkedin: https://www.linkedin.com/in/florijan-klezin-72204910b/
+  linkedin: https://www.linkedin.com/in/fklezin/
   github: fklezin
-  facebook: https://www.facebook.com/florijan.klezin
-  #instagram : https://www.instagram.com/fklezin/
-  # disqus: your_disqus_forum_shortname
+  medium: https://medium.com/@fklezin
 
-google_analytics: 'UA-141803197-1'
+google_analytics: 'G-6DTGKS52EV'
 
 # Syntax highlighting
 highlightstyle: ''
 styles: [agate, androidstudio, arta, asceti, atelier-cave.dark, atelier-cave.light, atelier-dune.dark, atelier-dune.light, atelier-estuary.dark, atelier-estuary.light, atelier-forest.dark, atelier-forest.light, atelier-heath.dark, atelier-heath.light, atelier-lakeside.dark, atelier-lakeside.light, atelier-plateau.dark, atelier-plateau.light, atelier-savanna.dark, atelier-savanna.light, atelier-seaside.dark, atelier-seaside.light, atelier-sulphurpool.dark, atelier-sulphurpool.light, brown_paper, codepen-embed, color-brewer, dark, darkula, default, docco, far, foundation, github, github-gist, googlecode, grayscale, hopscotch, hybrid, idea, ir_black, kimbie.dark, kimbie.light, magula, mono-blue, monokai, monokai_sublime, obsidian, paraiso.dark, paraiso.light, pojoaque, railscast, rainbow, school_book, solarized_dark, solarized_light, styles_list.txt, sunburst, tomorrow, tomorrow-night-blue, tomorrow-night-bright, tomorrow-night, tomorrow-night-eightie, v, xcode, zenburn]
 
 # Handling Reading
-exclude: ["README.md", "README.html"]
+exclude: ["README.md", "README.html", "vendor", "node_modules", ".git", ".github"]
 
 # Build settings
 highlighter: null
 markdown: kramdown
 
-plugins:
-  - jekyll-admin
+# jekyll-admin disabled to avoid eventmachine dependency
+plugins: []

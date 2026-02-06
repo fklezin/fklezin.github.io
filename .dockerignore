@@ -1,0 +1,11 @@
+vendor/bundle
+.cursor/
+.git/
+.gitignore
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+node_modules/
+

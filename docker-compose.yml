@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  jekyll:
+    image: jekyll/jekyll:latest
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/srv/jekyll
+      - jekyll_bundle:/usr/local/bundle
+    command: jekyll serve --force_polling -H 0.0.0.0 --watch
+
+volumes:
+  jekyll_bundle:
+

@@ -1,6 +1,10 @@
 <header class="header">
     <div class="navigation">
-        <a href="/" class="logo">{{ site.title }}</a>
+        {% if page.url == "/" %}
+            <a href="/" class="logo">{{ site.title }}</a>
+        {% else %}
+            <a href="/" class="logo">FK</a>
+        {% endif %}
 
         <ul class="menu">
             <!--<li class="menu__entry"><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>-->
@@ -31,6 +35,12 @@
         {% if site.author.linkedin %}
         <a href="{{ site.author.linkedin}}" class="social-links__entry" target="_blank">
             <i class="fa fa-linkedin"></i>
+        </a>
+        {% endif %}
+
+        {% if site.author.medium %}
+        <a href="{{ site.author.medium}}" class="social-links__entry" target="_blank">
+            <i class="fa fa-medium"></i>
         </a>
         {% endif %}
 

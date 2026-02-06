@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-{% include page/title.html %}
+{% if page.title and page.title != "" %}
+  {% include page/title.html %}
+{% endif %}
 
 {{ content }}
 
