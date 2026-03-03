@@ -18,15 +18,17 @@ permalink:
 
   <section class="featured-section">
     <h2 class="section-title">Featured Projects</h2>
-    <div class="featured-card">
-      <h3 class="featured-title">🗄️ DuckDB SiStat Extension</h3>
-      <p class="featured-description">Query Slovenia's SiStat open data portal directly from DuckDB using SQL. No external ETL required.</p>
-      <a href="https://github.com/fklezin/duckdb-sistat" class="featured-link">View on GitHub →</a>
-    </div>
-    <div class="featured-card">
-      <h3 class="featured-title">📱 UPN to EPC QR Converter</h3>
-      <p class="featured-description">Scan a Slovenian UPN payment QR and convert it to the European EPC standard.</p>
-      <a href="/qr.upn/" class="featured-link">Try it now →</a>
+    <div class="featured-grid">
+      <div class="featured-card">
+        <h3 class="featured-title">🦆 DuckDB SiStat Extension</h3>
+        <p class="featured-description">Query Slovenia's SiStat open data portal directly from DuckDB using SQL. No external ETL required.</p>
+        <a href="https://github.com/fklezin/duckdb-sistat" class="featured-link">View on GitHub →</a>
+      </div>
+      <div class="featured-card">
+        <h3 class="featured-title">📱 UPN to EPC QR Converter</h3>
+        <p class="featured-description">Scan a Slovenian UPN payment QR and convert it to the European EPC standard.</p>
+        <a href="/qr.upn/" class="featured-link">Try it now →</a>
+      </div>
     </div>
   </section>
 

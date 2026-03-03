@@ -77,11 +77,19 @@
   margin-bottom: 40px;
 }
 
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
 .featured-card {
   background: white;
   border: 2px solid #e8e8e8;
   border-radius: 8px;
   padding: 30px;
+  display: flex;
+  flex-direction: column;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 
   &:hover {
@@ -102,6 +110,7 @@
   line-height: 1.6;
   color: $cloudy;
   margin: 0 0 20px 0;
+  flex: 1;
 }
 
 .featured-link {
@@ -261,6 +270,10 @@
 
   .featured-section {
     margin-bottom: 30px;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
   }
 
   .featured-card {
