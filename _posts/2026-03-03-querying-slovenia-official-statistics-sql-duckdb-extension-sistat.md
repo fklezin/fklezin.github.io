@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Querying Slovenia's Official Statistics in SQL: A DuckDB Extension for SiStat (SURS)"
+title: "Querying Slovenia's Official Statistics (SURS, SiStat) in SQL"
 subtitle: "Discover, inspect, and query Slovenian official statistics directly from DuckDB—no Python or external pipelines"
 date: 2026-03-03 00:00:00
 categories: [data-engineering, duckdb, sql, open-data]
@@ -9,11 +9,8 @@ author: Florijan Klezin
 excerpt: "A DuckDB extension that exposes Slovenia's SiStat (SURS) PX-Web API as three SQL table functions, so you can discover, inspect, and query Slovenian official statistics directly from DuckDB."
 ---
 
-![SiStat / DuckDB](https://miro.medium.com/v2/resize:fit:882/format:webp/1*ASQPSjtOAhkmsd1UXgtxhA.png)
 
 Slovenia's Statistical Office (SURS) publishes 1000+ datasets through the **SiStat** PX-Web API. Until recently, using that data in analytics meant custom scripts, ETL, or manual downloads. I built a **DuckDB extension** that exposes SiStat as three SQL table functions, so you can discover, inspect, and query Slovenian official statistics directly from DuckDB—no Python or external pipelines.
-
-This post walks through **why** I did it, **what** was required to implement the API wrappers, **how** I published it as a DuckDB community extension, and **how** you can use it.
 
 ---
 
