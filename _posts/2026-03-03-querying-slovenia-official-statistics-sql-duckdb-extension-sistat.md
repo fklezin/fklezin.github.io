@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Querying Slovenia's Official Statistics (SURS, SiStat) in SQL"
-subtitle: "Discover, inspect, and query Slovenian official statistics directly from DuckDB—no Python or external pipelines"
+subtitle: "Query Slovenian official statistics directly from DuckDB—no Python or external pipelines"
 date: 2026-03-03 00:00:00
 categories: [data-engineering, duckdb, sql, open-data]
 tags: [duckdb, sistat, surs, slovenia, sql, px-web]
