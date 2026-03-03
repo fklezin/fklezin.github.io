@@ -282,6 +282,25 @@ strong {
             margin-bottom: 8px;
         }
     }
+
+    ol {
+        padding-left: 28px;
+        margin-bottom: 20px;
+        counter-reset: item;
+
+        li {
+            font-size: 20px;
+            line-height: 32px;
+            margin-bottom: 12px;
+            padding-left: 8px;
+
+            &::marker {
+                font-weight: 700;
+                color: $iron;
+            }
+        }
+    }
+
 }
 
 /* =Post page */
