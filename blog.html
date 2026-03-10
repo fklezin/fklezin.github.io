@@ -7,9 +7,9 @@ sitemap:
 ---
 
 <ul class="list-posts">
-    {% for post in site.posts %}
+    {% for post in site.data.medium_posts %}
         <li class="post-teaser">
-            <a href="{{ post.url | prepend: site.baseurl }}">
+            <a href="{{ post.url }}" target="_blank" rel="noopener noreferrer">
                 <span class="post-teaser__title">{{ post.title }}</span>
                 <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
             </a>

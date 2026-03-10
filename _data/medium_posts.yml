@@ -1,0 +1,4 @@
+- title: "When to Consider Postgres Partitioning in 2026"
+  date: 2026-02-06
+  url: "https://medium.com/@fklezin/when-to-consider-postgres-partitioning-in-2026-71189ac88728"
+  excerpt: "A practical guide to knowing when PostgreSQL partitioning is actually the right call in 2026."

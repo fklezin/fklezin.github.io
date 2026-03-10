@@ -34,13 +34,13 @@ permalink:
 
   <section class="blog-section">
     <div class="section-header">
-      <h2 class="section-title">Recent Blog Posts</h2>
+      <h2 class="section-title">Recent Medium Posts</h2>
       <a href="/blog.html" class="view-all-link">View all →</a>
     </div>
     <ul class="post-list">
-      {% for post in site.posts limit:5 %}
+      {% for post in site.data.medium_posts limit:5 %}
         <li class="post-item">
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
+          <a href="{{ post.url }}" class="post-link" target="_blank" rel="noopener noreferrer">
             <div class="post-content">
               <span class="post-title">{{ post.title }}</span>
               <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
@@ -60,7 +60,6 @@ permalink:
     <a href="mailto:klezin.florijan95@gmail.com" class="contact-button">Get in Touch</a>
   </section>
 </div>
-
 
 
 
