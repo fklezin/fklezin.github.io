@@ -2,3 +2,7 @@
   date: 2026-02-06
   url: "https://medium.com/@fklezin/when-to-consider-postgres-partitioning-in-2026-71189ac88728"
   excerpt: "A practical guide to knowing when PostgreSQL partitioning is actually the right call in 2026."
+- title: "Querying Slovenia's Official Statistics (SURS, SiStat) in SQL"
+  date: 2026-03-03
+  url: "https://medium.com/@fklezin/querying-slovenias-official-statistics-surs-sistat-in-sql-0e1109c7b230"
+  excerpt: "Query SiStat directly from DuckDB with SQL-first workflows."
